@@ -21,6 +21,7 @@ export class MoviesService {
     this.getOne(id);
     this.movies = this.movies.filter((movie) => movie.id !== id);
   }
+
   create(movieData) {
     this.movies.push({
       id: this.movies.length + 1,
